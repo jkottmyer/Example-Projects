@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="../images/verumlogo.png">
+   <link rel="stylesheet" href="../normalize.css">
+   <link rel="stylesheet" href="indclasses.css">
+   <link rel="stylesheet" href="../SlickNav/dist/slicknav.css">
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+   <script src="../SlickNav/dist/jquery.slicknav.js"></script>
+   <script type="text/javascript">
+       $(function(){
+           $('#nav_menu').slicknav();
+       });
+   </script>
+   <title>Cleric</title>
+</head>
+<body>
+<header>
+    <div id="icon">
+        <a href="../index.html"><img src="../images/verumlogo.png" alt="Verum Logo" width="90px" height="90px"></a>
+    </div>
+    <nav>
+        <nav id="mobile_menu" class="slicknav_menu" style="display:none;"></nav>
+        <nav id="nav_menu">
+            <ul id="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../classes/index.html">Classes</a> 
+                    <ul>
+                        <li><a href="../classes/barbarian.html">Barbarian</a></li>
+                        <li><a href="../classes/bard.html">Bard</a></li>
+                        <li><a href="../classes/cleric.html">Cleric</a></li>
+                        <li><a href="../classes/druid.html">Druid</a></li>
+                        <li><a href="../classes/fighter.html">Fighter</a></li>
+                        <li><a href="../classes/monk.html">Monk</a></li>
+                        <li><a href="../classes/paladin.html">Paladin</a></li>
+                        <li><a href="../classes/ranger.html">Ranger</a></li>
+                        <li><a href="../classes/rogue.html">Rogue</a></li>
+                        <li><a href="../classes/sorcerer.html">Sorcerer</a></li>
+                        <li><a href="../classes/warlock.html">Warlock</a></li>
+                        <li><a href="../classes/wizard.html">Wizard</a></li>
+                    </ul>
+                </li>
+                <li><a href="../origins/index.html">Origins</a>
+                    <ul>
+                        <li><a href="../origins/krazak.html">Krazak</a></li>
+                        <li><a href="../origins/dolten.html">Dolten</a></li>
+                        <li><a href="../origins/bloodwavebay.html">Bloodwave Bay</a></li>
+                        <li><a href="../origins/therift.html">The Rift</a></li>
+                        <li><a href="../origins/steton.html">Steton</a></li>
+                        <li><a href="../origins/daborak.html">Daborak</a></li>
+                        <li><a href="../origins/badlands.html">Badlands</a></li>
+                        <li><a href="../origins/orde.html">Orde</a></li>
+                        <li><a href="../origins/khao.html">Khao</a></li>
+                        <li><a href="../origins/majital.html">Majital</a></li>
+                    </ul>
+                </li>
+                <li><a href="../races/index.html">Races</a>
+                    <ul>
+                        <li><a href="../races/dragonborn.html">Dragonborn</a></li>
+                        <li><a href="../races/dwarves.html">Drawves</a></li>
+                        <li><a href="../races/elves.html">Elves</a></li>
+                        <li><a href="../races/fey.html">Fey</a></li>
+                        <li><a href="../races/giantkin.html">Giantkin</a></li>
+                        <li><a href="../races/gnomes.html">Gnomes</a></li>
+                        <li><a href="../races/greenskin.html">Greenskin</a></li>
+                        <li><a href="../races/halflings.html">Halflings</a></li>
+                        <li><a href="../races/humans.html">Humans</a></li>
+                        <li><a href="../races/lizardfolk.html">Lizardfolk</a></li>
+                        <li><a href="../races/other.html">Other</a></li>
+                        <li><a href="../races/planetouched.html">Planetouched</a></li>
+                        <li><a href="../races/skinwalker.html">Skinwalker</a></li>
+                    </ul>
+                </li>
+                <li><a href="../divinity/index.html">Divinity</a>
+                    <ul>
+                        <li><a href="../divinity/white.html">White Pantheon</a></li>
+                        <li><a href="../divinity/gray.html">Gray Pantheon</a></li>
+                        <li><a href="../divinity/green.html">Green Pantheon</a></li>
+                        <li><a href="../divinity/blue.html">Blue Pantheon</a></li>
+                        <li><a href="../divinity/black.html">Black Pantheon</a></li>
+                    </ul>
+                </li>
+                <li><a href="../create/index.php">Create</a>
+                </li>
+                <li><a href="../about/index.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </nav>
+    <div id="links">
+        <a href="https://discord.com/invite/MPuw5fW" target="_blank"><img src="../images/discordlogo.png" alt="Arcadum Discord Link" height="30px" width="30px"></a>
+        <a href="https://www.patreon.com/m/Arcadum" target="_blank"><img src="../images/patreonlogo.png" alt="Arcadum Patreon Link" height="25px" width="25px" style="padding-top: 1px;"></a>
+        <a href="https://www.twitch.tv/arcadum" target="_blank"><img src="../images/twitchlogo.png" alt="Arcadum Twitch Link" height="25px" width="25px" style="padding-top: 1px;"></a>
+        <a href="https://twitter.com/GloriousArcadum" target="_blank"><img src="../images/twitterlogo.png" alt="Arcadum Twitter Link" height="25px" width="25px" style="padding-top: 1px;"></a>
+        <a href="https://www.youtube.com/c/Arcadum" target="_blank"><img src="../images/youtubelogo.png" alt="Arcadum Youtube Link" height="25px" width="25px" style="padding-top: 1px;"></a>
+    </div>
+</header>
+<main>
+    <div class="hflex">
+        <div id="classinfo">
+            <h1>Cleric</h1>
+            <h2>Hit Points</h2>
+            <p><b>Hit Dice:</b> 1d8</p>
+            <p><b>Hit Points at 1st level:</b> 8 + Consitution modifier</p>
+            <p><b>Hit Points at Higher Levels:</b> 1d8 (or 5) + Constitution modifier per Cleric level</p>
+            <h2>Proficiencies</h2>
+            <p><b>Armor:</b> Light armor, medium armor, shields</p>
+            <p><b>Weapons:</b> Simple weapons</p>
+            <p><b>Tools:</b> None</p>
+            <p><b>Saving Throws:</b> Wisdom, Charisma</p>
+            <p><b>Skills:</b> Choose any 2 from History, Insight, Medicine, Persuasion, and Religion</p>
+            <h2>Starting Equipment</h2>
+            <p>You start with the following items, plus anything provided by your origin</p>
+            <ul>
+                <li>A mace or a warhammer(if proficient)</li>
+                <li>Scale mail, leather armor, or chain mail(if proficient)</li>
+                <li>A light crossbow and 20 bolts or any simple weapons</li>
+                <li>A priest's pack or an explorer's pack</li>
+                <li>A shield and a holy symbol</li>
+            </ul>
+            <h2>Multiclassing</h2>
+            <p><b>Ability Score Minimum:</b> Wisdom 13</p>
+            <p>When you gain a level in a class other than your first, you gain only some of that class's starting proficiencies.</p>
+            <p><b>Armor:</b> Light armor, medium armor, shields</p>
+        </div>
+        <div id="classdescription">
+            <h1>Description</h1>
+                <p>Arms and eyes upraised toward the sun and a prayer on his lips, an elf begins to glow with an inner light that spills out to heal his battle-worn companions.</p>
+                <p>Chanting a song of glory, a dwarf swings his axe in wide swaths to cut through the ranks of orcs arrayed against him, shouting praise to the gods with every foe's fall.</p>
+                <p>Calling down a curse upon the forces of undeath, a human lifts her holy symbol as light pours from it to drive back the zombies crowding in on her companions.</p>
+                <p>Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. No ordinary priest, a cleric is imbued with divine magic.</p>
+            <h1>Healers and Warriors</h1>
+                <p>Divine magic, as the name suggests, is the power of the gods, flowing from them into the world. Clerics are conduits for that power, manifesting it as miraculous effects. The gods don't grant this power to everyone who seeks it, but only to those chosen to fulfill a high calling.</p>
+                <p>Harnessing divine magic doesn't rely on study or training. A cleric might learn formulaic prayers and ancient rites, but the ability to cast cleric spells relies on devotion and an intuitive sense of a deity's wishes.</p>
+                <p>Clerics combine the helpful magic of healing and inspiring their allies with spells that harm and hinder foes. They can provoke awe and dread, lay curses of plague or poison, and even call down flames from heaven to consume their enemies. For those evildoers who will benefit most from a mace to the head, clerics depend on their combat training to let them wade into melee with the power of the gods on their side.</p>
+            <h1>Divine Agents</h1>
+                <p>Not every acolyte or officiant at a temple or shrine is a cleric. Some priests are called to a simple life of temple service, carrying out their gods' will through prayer and sacrifice, not by magic and strength of arms. In some cities, priesthood amounts to a political office, viewed as a stepping stone to higher positions of authority and involving no communion with a god at all. True clerics are rare in most hierarchies.</p>
+                <p>When a cleric takes up an adventuring life, it is usually because his or her god demands it. Pursuing the goals of the gods often involves braving dangers beyond the walls of civilization, smiting evil or seeking holy relics in ancient tombs. Many clerics are also expected to protect their deities' worshipers, which can mean fighting rampaging orcs, negotiating peace between warring nations, or sealing a portal that would allow a demon prince to enter the world.</p>
+                <p>Most adventuring clerics maintain some connection to established temples and orders of their faiths. A temple might ask for a cleric's aid, or a high priest might be in a position to demand it.</p>
+                <h2 style="text-align: center;">Cleric in Verum follow the same rules as Standard 5e. <a style="font-size: inherit;" href="https://5e.tools/classes.html#cleric_phb" target="_blank">Official variants</a> are allowed as well as the variant(s) listed below.</h2>
+            <p style="text-align: center;padding-top:10px;"><a href="#balance">Balance</a> <a href="#chaos">Chaos</a> <a href="#coin">Coin</a> <a href="#dreams">Dreams</a> <a href="#earth">Earth</a> <a href="#fate">Fate</a> <a href="#freedom">Freedom</a> <a href="#hope">Hope</a> <a href="#loyalty">Loyalty</a> <a href="#love">Love</a> <a href="#luck">Luck</a> <a href="#madness">Madness</a> <a href="#order">Order (Verumese)</a> <a href="#rage">Rage</a> <a href="#redemption">Redemption</a> <a href="#stars">Stars</a> <a href="#strife">Strife</a> <a href="#time">Time</a> <a href="#travel">Travel</a> <a href="#tyranny">Tyranny</a> <a href="#undead">Undead</a></p>
+            <h1 id="balance"><em>Balance</em></h1>
+            <p><em>To every action there is an opposite and equal reaction, to light there is dark, to hot there is cold, these are the natural forces that hold the world in balance. This balance is the source of your faith and belief.</em></p>
+            <h3>Deities</h3>
+            <p>Babylon, Gwaina, Silloway, Vinsc, Talven, Gazenaroc, Inca, Lorn, The Seven </p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Bane, Bless</li>
+                <li>3rd - Blindness/Deafness, Lesser Restoration</li>
+                <li>5th - Fireball, Sleet Storm</li>
+                <li>7th - Watery Sphere, Wall of Fire</li>
+                <li>9th - Negative Energy Flood, Mass Cure Wounds</li>
+            </ul>
+            <h2>Balanced Scales</h2>
+            <p>You are immune to the effects of advantage and disadvantage. Additionally, creatures cannot have advantage or disadvantage on attack rolls that target you.</p>
+            <h2>Balancing Surge</h2>
+            <p>Whenever you would normally have advantage or disadvantage on an attack roll or ability check that you make, you may grant that advantage or disadvantage to another creature within 30 feet of you as a bonus action. That creature has advantage or disadvantage on the next appropriate roll they make within one minute. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Wrath</h3>
+                    <p>At 2nd level you can use your channel divinity class feature to unleash the wrath of natural forces against those that would seek to control them. As an action, You can unleash a wave of either fire, cold, lightning, or acid damage that affects all creatures of your choice within 30 feet. These creatures cannot gain the benefits of advantage from any source until the start of your next turn. Additionally, all creatures affected by this ability must make a Wisdom saving throw, taking 2d4 damage on a failed save, plus an additional 1d4 per every second level after 2. Affected creatures take half as much damage on a successful save. </p>
+            <h2>Level 6<hr></h2>
+                <h3>Balanced Restored</h3>
+                    <p>At 6th level, whenever a creature within 30 feet would fail an attack roll or saving throw with advantage or succeed on such checks with disadvantage, you are healed for a number of hit points equal to 2d10 plus your Wisdom modifier. You may instead use your reaction to grant this healing to an ally within 30 feet.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Potent Spellcasting</h3>
+                    <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+                <h3>Divine Strike</h3>
+                    <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Balance in All Things</h3>
+                    <p>You cannot critically hit, nor can you be subject to critical hits. Instead, whenever you would roll a 20 on an attack roll or saving throw, you activate your Balancing Surge twice at no cost.</p>
+            <h1 id="chaos"><em>Chaos</em></h1>
+            <p><em>The swirling random events may seem happenstance to some, luck to others, but you know the truth, it is a force, a deadly, invigorating force behind these occurrences. The power of Chaos does not reveal itself to many, but those with the will to see it, can harness its great power. </em></p>
+            <h3>Deities</h3>
+            <p>Olakenhai, Kaheeli, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Chaos Bolt, Tasha's Hideous Laughter</li>
+                <li>3rd - Phantasmal Force, Crown of Madness</li>
+                <li>5th - Enemies Abound, Summon Lesser Demons</li>
+                <li>7th - Confusion, Compulsion</li>
+                <li>9th - Insect Plague, Synaptic Static</li>
+            </ul>
+            <h2>Bonus Cantrip</h2>
+            <p>You gain Eldritch Blast as a bonus cantrip. For you, this counts as a Cleric cantrip.</p>
+            <h2>Improve Chaos Bolt</h2>
+            <p>Whenever you trigger the leap effect from Chaos Bolt, it leaps twice and each bolt does an additional 1d6 points of damage.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Chaos Pulse</h3>
+                    <p>At 2nd level you can use your Channel Divinity class feature to blast a wave of chaotic energy. When an enemy within 30ft attacks you, you may as a reaction, impose disadvantage on their attack rolls until the start of your next turn. In addition, the next Chaos Bolt you cast within one minute that targets this creature automatically triggers it's leaping effect.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Misfortune's Gift</h3>
+                    <p>At 6th level, whenever you have disadvantage on a spell attack roll, your damage is maximized for the associated spell.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Potent Spellcasting</h3>
+                    <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Unending Chaos</h3>
+                    <p>Whenever you trigger the leap effect from Chaos Bolt, it leaps thrice and each bolt does an additional 3d6 points of damage.</p>
+            <h1 id="coin"><em>Coin</em></h1>
+            <h3>Deities</h3>
+            <p>Nero, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Color spray, Divine favor</li>
+                <li>3rd - Heat metal, Zone of truth</li>
+                <li>5th - Mass healing word, Slow</li>
+                <li>7th - Leomund's secret chest, Mordenkainen's private sanctum</li>
+                <li>9th - Commune, Rary's telepathic bond</li>
+            </ul>
+            <h2>Flowing Coffers</h2>
+            <p>Whenever you are adventuring, you are blessed with good fortune and as such any loot rewards from missions or from loot caches, have the currency reward increased by 10%.</p>
+            <h2>Wheel and Deal</h2>
+            <p>From 1st level, as a bonus action, you can sacrifice a number of maximum hit points up to your Wisdom modifier. If you do you can grant an ally within 15 feet a bonus equal to this amount to their damage roll on an attack or to their AC. This bonus lasts for 2 rounds, and your maximum hit points return after finishing a long rest.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Make it Rain</h3>
+                    <p>As an action, you can present your holy symbol, if you do, you can pay up to 1,000 gp. You heal yourself and your allies within 20 feet by 1 hit point for every 100 gp you spend. At 10th level, you can pay up to 2,500 gp. At 15th level, you can pay up to 5,000 gp.</p>
+            <h2>Level 6<hr></h2>
+                <h3>The Golden Throne</h3>
+                    <p>At 6th level, you become empowered with wealth. You can spend a hit die to heal yourself whenever you or your party would receive loot during an adventure. The loot must be worth at least 100 gp.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Potent Spellcasting</h3>
+                    <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Pay the Ferryman</h3>
+                    <p>At 17th level, you no longer require diamonds to use any spell that raises the dead. You can instead simply use gold, but the cost increases by 25%. In addition, if the amount is on your person (accessible during the mission), you can once per week pay this amount to cast such a spell on yourself as a reaction to death.</p>
+            <h1 id="dreams"><em>Dreams</em></h1>
+            <p><em>The realm just beyond the veil is a mystery to most, the realm of spirits and dreams just beyond the waking eye. You know this land, you have walked it's smoking ever-changing depths. You have seen into the dreams of your fellow kin, you have seen their true selves and it has taught you of the nature of the world.</em></p>
+            <h3>Deities</h3>
+            <p>Oun, Wode, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Sleep, Cause Fear</li>
+                <li>3rd - Darkness, Mirror Image</li>
+                <li>5th - Catnap, Phantom Steed</li>
+                <li>7th - Fabricate, Phantasmal Killer</li>
+                <li>9th - Dreams, Legend Lore</li>
+            </ul>
+            <h2>Bonus Cantrip</h2>
+            <p>You gain a cantrip of your choice from the bard or druid spell list. For you, they count as cleric cantrips.</p>
+            <h2>Restful Spells</h2>
+            <p>Whenever you would cast a spell of first level or higher that would target your allies, heal them for a number of hit points equal to the spell's level.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Day Dream</h3>
+                    <p>Starting at 2nd level, you can use your Channel Divinity to create an illusory duplicate of yourself.</p>
+                    <p>As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.</p>
+                    <p>For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Dream Form</h3>
+                    <p>As a bonus action, you may enter a state that is between both the dream realm and the waking realm, granting yourself resistance to all damage and advantage on attack rolls. This lasts for one minute or until you are subject to a critical hit. This ability can only be used once per long rest.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Potent Spellcasting</h3>
+                    <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Walk Back Through</h3>
+                    <p>Whenever you would be reduced to 0 hit points, you fall unconscious as normal. In 3 rounds or if you would die, you instead, are healed to half your maximum hit points and may act normally. Once used this ability cannot be used again until you complete a long rest.</p>
+            <h1 id="earth"><em>Earth</em></h1>
+            <p><em>A silent watcher, gazing, and patient, one day, a mountain will be created from this patience.</em></p>
+            <h3>Deities</h3>
+            <p>Ezokhine, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Earth Tremor, Santuary</li>
+                <li>3rd - Silence, Dust Devil</li>
+                <li>5th - Erupting Earth, Leomund's Tiny Hut</li>
+                <li>7th - Stone Shape, Stoneskin</li>
+                <li>9th - Wall of Stone, Transmute Rock</li>
+            </ul>
+            <h2>Bonus Proficiency and Cantrip</h2>
+            <p>When you choose this domain at first level, you gain proficiency in Heavy Armor, and the Insight or perception skill. You gain the Mold Earth cantrip if you don’t already know it and can cast it as a cleric cantrip.</p>
+            <h2>Earthen Watcher</h2>
+            <p>At 1st level, as an action, you can see though the an area that is affected by the mold earth cantrip as if you were in it’s space. You have a total pool of minutes that is equal 10 times your wisdom modifier that you can look through the molded earth with. Ending this effect early always uses 10 minutes or more, whichever is higher. You are blinded while looking through the stone this way. You can only look though one affected area of mold earth at a time. You can end this effect as a bonus action. If a creature touches the affected area, this effect ends early.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Stone's Protection</h3>
+                    <p>Starting at 2nd level you can Reinforce yourself and your allies with stone.</p>
+                    <p>As an action, you can use your Channel Divinity to give you and up to 6 allies 2d6 + your cleric level in temporary health points until you take a short or long rest.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Battered and Broken</h3>
+                    <p>Starting at 6th level, Whenever you or an ally within 30ft of you takes Bludgeoning, Piercing, or Slashing damage, you can use your reaction to grant resistance to that instance of damage.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Divine Strike</h3>
+                    <p>You have withstood blow after blow, now you can rebel against the endless winds and rivers that wear you down. At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Protector of the Helpless</h3>
+                    <p>Starting at 17th level, if any ally within 60ft of you that you can see is either Blinded, Charmed, Frightened, Incapacitated, Paralyzed, Petrified, Restrained, Stunned, or Unconscious and takes damage, you can use your reaction to take that damage, instead of that creature taking it. Until the end of your next turn, as an action you can end one of the above listed conditions affecting the creature. If you use this effect on a creature with 0hp, as part of this action, you can also cast a spell that restores hit points.</p>
+            <h1 id="fate"><em>Fate</em></h1>
+            <p><em>Of each life, a thread is spun. These threads of many colors, sizes, and makes, are all woven into the tapestry of fate. But threads are not an unbroken line, the will of the living twist, turn, tie these threads and cause them to be frayed, knotted, and sundered. No prophecy is ever entirely true, entirely false. All threads contain some measure of truth, some grain of a lie. Fate is written by those with the will to grab these threads and use them to chart a course for themselves and their fellows. As an agent of fate, you have the power to see visions of the future and manipulate them as you see fit. You may spare them for a time, but none are spared forever.</em></p>
+            <h3>Deities</h3>
+            <p>Matron of Fate, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Heroism, Silent Image</li>
+                <li>3rd - Augury, Calm Emotions</li>
+                <li>5th - Clairvoyance, Major Image</li>
+                <li>7th - Arcane Eye, Divination</li>
+                <li>9th - Scrying, Seeming</li>
+            </ul>
+            <h2>Bonus Proficiency and Cantrip</h2>
+            <p>The providence of fate allows you to spin the threads in your favor and see the truth of others. You gain proficiency in the Insight skill and gain the Guidance spell as a cantrip known.</p>
+            <h2>Not Today</h2>
+            <p>You know when it is your time to die, even if it remains hauntingly hazy. Still, it gives you some ability to endure deadly blows. When the damage from a single instance of damage would cause you to go unconscious or die, you may use your reaction to reduce the damage you suffer by an amount equal to 2+your proficiency modifier+your wisdom modifier. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Fateful Girding</h3>
+                    <p>Starting at second level you can channel the forces of fate to allow your allies the power to better shape the tapestry.</p>
+                    <p>As an action, you present your holy symbol and cause you and all allies that you can see to gain temporary hit points equal to 1d8+ Your Wisdom Modifier+ Your Proficiency Bonus. These temporary hit points remain until you successfully complete a short rest.</p>
+                    <p>Additionally, whenever they roll a d20 they roll with advantage. This effect fades at the end of your next turn.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Uncertain Prophecy</h3>
+                    <p>Starting at 6th level, you can exert some small measure of control over the threads of fate. Whenever any creature within 30 feet of you makes an attack roll or saving throw, you may use your reaction to add a bonus or penalty to the roll equal to 1d4. This does not stack with the bonus or penalty given by the spells Bless or Bane, respectively. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Potent Spellcasting</h3>
+                    <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+                <h3>Ill Omen</h3>
+                    <p>Starting at 8th level, whenever you successfully hit a hostile creature with a cantrip, or it fails it's saving throw against your cantrip, it suffers disadvantage on its saving throw against the next spell of first level or higher you target it with. If this spell has an area of effect, only that creature gains disadvantage. This effect ends at the end of your next turn.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Fate's Favored</h3>
+                    <p>Your ability to weave the threads of fate allows you to traverse the most optimistic threads of your fate and the fate of those around you. Starting at 17th level, you can use your action to activate a 60 foot aura that lasts for 1 minute or until you dismiss it using another action. All allies within the aura, including yourself, are immune to disadvantage. This action can be taken an unlimited amount of times.</p>
+            <h1 id="freedom"><em>Freedom</em></h1>
+            <p><em>Freedom is more than an ideal it is a force, a living breathing soul that beats in thew heart of every creature. You can feel this pulse, it calls to you and you answer.</em></p>
+            <h3>Deities</h3>
+            <p>Cassius, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Heroism, Bless</li>
+                <li>3rd - Shatter, Pass Without Trace</li>
+                <li>5th - Dispel Magic, Crusader's Mantle</li>
+                <li>7th - Freedom of Movement, Aura of Purity</li>
+                <li>9th - Passwall, Dawn</li>
+            </ul>
+            <h2>Bonus Proficiency</h2>
+            <p>At 1st level, you gain proficiency with martial weapons.</p>
+            <h2>Free Spirit</h2>
+            <p>Whenever you or an ally within 30ft would provoke an attack of opportunity, you may use your reaction to grant +5 AC to that ally until the end of their next turn. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Bound No More</h3>
+                    <p>At 2nd level a cleric may use his action to Channel Divinity to free the imprisoned. You and all allies within 30ft are immune to the effects of difficult terrain, have advantage on dexterity saving throws, and have +1 to AC for 1 minute.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Slippery</h3>
+                    <p>You are immune to the effects of difficult terrain, paralysis, and being restrained. You also have advantage on skill checks used to break a grapple.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Divine Strike</h3>
+                    <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Eaglesoul</h3>
+                    <p>Whenever you would use your movement, you gain a +3 to damage rolls with your weapon attacks for every 10ft you moved, up to a maximum of +15 damage.</p>
+            <h1 id="hope"><em>Hope</em></h1>
+            <p><em>From wistful dreams to impassioned desires, hope dwells within all. Those that can tap into it freely and spread it to others, however, are the most gifted among us.</em></p>
+            <h3>Deities</h3>
+            <p>The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Bless, Heroism</li>
+                <li>3rd - Aid, Lesser Restoration</li>
+                <li>5th - Beacon of Hope, Remove Curse</li>
+                <li>7th - Aura of Purity, Guardian of Faith</li>
+                <li>9th - Greater Restoration, Circle of Power</li>
+            </ul>
+            <h2>Inspired Mind</h2>
+            <p>Choose one of the following: Saves, Skills, or Attacks. You gain +1 to all rolls of the selected type. You may change this selection after a short rest. At 8th Cleric level this increases to +2 and at 16th Cleric level to +3.</p>
+            <h2>Glimpse of Ambition</h2>
+            <p>You may choose an ally as a bonus action once a round. Until the beginning of your next turn, they gain the benefit of your Inspired Mind ability. You may extend this duration to one minute at the cost of forfeiting the bonus to yourself for the same duration. This effect may only be active on one ally at a time, though you may end it early by using the ability again.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity:Deny Despair</h3>
+                    <p>Starting at 2nd level, you can use your Channel Divinity to safeguard your allies, and your own, morale.</p>
+                    <p>As an action, you may grant all allies within 30ft the benefit of your inspired mind and immunity to being frightened for one minute.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Determination</h3>
+                    <p>At 6th level, any ally making Death saving throws within 60ft of you gains advantage on the roll. In addition, on their third success, instead of stabilizing, they are revived at 1 Hit Point.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Potent Spellcasting</h3>
+                    <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Beacon of Hope</h3>
+                    <p>At 17th level, Inspired Mind applies to saves, skills, and attacks, and you no longer forfeit any of your bonuses to extend Glimpse of Ambition. In addition, you are immune to all emotion-based effects that would affect you negatively and if you roll a natural 20 on an attack roll or saving throw while under the effect of Deny Despair, the Channel Divinity use is regained.</p>
+            <h1 id="loyalty"><em>Loyalty</em></h1>
+            <p><em>While there are many that find strength from within, there will always be devotees who find it in their closest allies. Trust is their mantra, camaraderie their virtue, and woe be unto those who would cross one of their flock.</em></p>
+            <h3>Deities</h3>
+            <p>Tilt, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Ceremony, Divine Favor</li>
+                <li>3rd - Aid, Healing Spirit</li>
+                <li>5th - Beacon of Hope, Crusader's Mantle</li>
+                <li>7th - Aura of Purity, Mordenkainen's Faithful Hound</li>
+                <li>9th - Dispel Evil and Good, Mass Cure Wounds</li>
+            </ul>
+            <h2>Trustworth Intentions</h2>
+            <p>You gain proficiency in Persuasion. You also double your proficiency bonus on Persuasion checks to befriend or otherwise earn a creature's trust.</p>
+            <h2>Closest Confidants</h2>
+            <p>Select a number of allies (other than yourself) equal to your wisdom modifier. Whenever you cast a spell with the range of self, you may instead cast it upon one of these allies so long as they are within 30 feet of you. You can use this ability a number of times per day equal to your wisdom modifier. You regain the uses of this ability after you perform a long rest.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Bolster Allies</h3>
+                    <p>Starting at 2nd level, you can use your Channel Divinity to fortify your companions' defenses.</p>
+                    <p>Whenever any of your Closest Confidants is subjected to an effect that requires a save, you may, as a reaction, grant one of them advantage on the roll.</p>
+            <h2>Level 6<hr></h2>
+                <h3>One for All</h3>
+                    <p>At 6th level, whenever you are subjected to an effect that requires a save which would compel you to harm, deceive, or otherwise betray your allies, you gain advantage on the roll.</p>
+            <h2>Level 8<hr></h2>
+                <h3>All for One</h3>
+                    <p>At 8th level, when you are attacked by a creature, all your Confidants gain a bonus on attacks against that creature equal to half your proficiency bonus for one round.</p>
+            <h2>Level 17<hr></h2>
+                <h3>With Open Arms</h3>
+                    <p>At 17th level, you consider all your allies to be Confidants (including yourself), though you still select allies for the Closest Confidants ability (still prohibiting yourself). Whenever you Channel Divinity to use Bolster Allies on them, all of these chosen Confidants gain advantage on their saves, instead of only one. In addition, you have immunity to effects that would compel you to harm, deceive, or otherwise betray these chosen allies.</p>
+            <h1 id="love"><em>Love</em></h1>
+            <p><em>Love is a force that few can understand and fewer still can predict. It comes and it goes, on whim and whimsy, it sows seeds of pure joy and reaps absolute loss. You have studied it, felt it, nurtured it, lost it. you have sought to control the feeling within and translate it into an even greater understanding.</em></p>
+            <h3>Deities</h3>
+            <p>Viderick, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Charm Person, Animal Friendship</li>
+                <li>3rd - Enthrall, Calm Emotions</li>
+                <li>5th - Mass Healing Word, Spirit Guardians</li>
+                <li>7th - Charm Monster, Guardian of Faith</li>
+                <li>9th - Commune, Hallow</li>
+            </ul>
+            <h2>Bonus Proficiency</h2>
+            <p>You gain proficiency in Insight, an instrument of your choice and an artisan tool of your choice. As long as you are a follower of Viderick, and gain the god's lip service, you gain expertise in Insight.</p>
+            <h2>No! Stop!</h2>
+            <p>Whenever an ally within 5ft of you would be attacked by an enemy, you may use your reaction to add a bonus to that ally's AC equal to your proficiency bonus, for that attack. If this causes the attack to miss, you and your ally targeted are healed for 1d6 Hit Points.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Embrace!</h3>
+                    <p>At second level, you may present your holy symbol as an action to cause all enemies within 30ft to have disadvantage on attack rolls for one minute. At the start of each of its turns, affected creatures may attempt a charisma saving throw to end the effect. The cleric can end this effect on one creature of their choosing at the start of their turn.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Endearment</h3>
+                    <p>You can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you. You may use this ability a number of times equal to your wisdom modifier. You regain the uses of this ability after a long rest.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Potent Spellcasting</h3>
+                    <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Last Goodbye</h3>
+                    <p>Whenever an ally within 30ft would die, you may choose to die in their place as a reaction. If you do, you die and the ally is fully healed and is immune to damage for 1d4 rounds. In addition, they may add your wisdom modifier to attack and damage rolls of any kind. This is considered an untyped bonus and is meant to stack with anything and lasts 24 hours.</p>
+            <h1 id="luck"><em>Luck</em></h1>
+            <p><em>Some seem to live a charmed life, this could be the outlook of the jealous and spiteful or a literal translation of divine providence, your not really sure, all you know is, things seem to go your way.</em></p>
+            <h3>Deities</h3>
+            <p>Sekelcuse, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Bane, Guiding Bolt</li>
+                <li>3rd - Blur, Find Traps</li>
+                <li>5th - Bestow Curse, Nondetection</li>
+                <li>7th - Death Ward, Mordenkainen's Faithful Hound</li>
+                <li>9th - Skill Empowerment, Circle of Power</li>
+            </ul>
+            <h2>Bonus Proficiency</h2>
+            <p>At 1st level, you gain proficiency with martial weapons.</p>
+            <h2>Divine Luck</h2>
+            <p>When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. If you possess the Lucky Halfing Trait, you may instead use this power to reroll twice upon rolling a 1 and take either result. You may only benefit from this ability a number of times equal to your Wisdom modifier. You regain these uses when you finish a long rest.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Lucky Save</h3>
+                    <p>Starting at 2nd level, you can use your Channel Divinity to infuse an ally with luck against an effect. As a reaction you can cause an ally that has just rolled a saving throw, but of which the results have not been revealed to gain a +5 to that roll.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Improved Critical</h3>
+                    <p>Your weapon attacks critically hit on a 19-20.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Divine Strike</h3>
+                    <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Miraculous Luck</h3>
+                    <p>Your divine luck ability now rerolls on a 5 or lower.</p>
+            <h1 id="madness"><em>Madness</em></h1>
+            <p><em>We are all given a flicker of madness at one point or another, but you must be careful to not lose it, for it is the true apex of the intellect.</em></p>
+            <h3>Deities</h3>
+            <p>Olakenhai, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Dissonant Whispers, Tasha's Hideous Laughter</li>
+                <li>3rd - Phantasmal Force, Crown of Madness</li>
+                <li>5th - Tongues, Hunger of Hadar</li>
+                <li>7th - Confusion, Phantasmal Killer</li>
+                <li>9th - Modify Memory, Geas</li>
+            </ul>
+            <h2>Delusions of Grandeur</h2>
+            <p>You have an advantage on saving throws against effects that would cause you to become charmed or frightened.</p>
+            <h2>An Imbalance of Humors</h2>
+            <p>Starting when you choose this domain at 1st level, you can use your action to touch a willing creature to give it resistance to acid, cold, fire, or lightning damage. If you choose resistance to acid or lightning damage, the creature also gains vulnerability to the other. If you choose resistance to cold or fire damage, the creature also gains vulnerability to the other. The resistance and vulnerability both last for 1 minute. You may use this ability a number of times per day equal to your Wisdom modifier, and regain these uses after a long rest.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Hysteria</h3>
+                    <p>Starting at 2nd level, you can use your Channel Divinity to spread madness among the ranks.</p>
+                    <p>As an action, you may present your holy symbol and invoke hysteria on creatures with 30 ft. of you. All those affected must make Wisdom saving throws. If a creature fails, they lose the ability to distinguish friend from foe, regarding all other creatures it can see as enemies until the end of their turn. Whenever an affected creature chooses a target, it must choose the target at random from among the creatures it can see within range of the attack, spell, or other ability it's using. If an enemy provokes an opportunity attack from the affected creature, the creature must make that attack if it is able to.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Insane Focus</h3>
+                    <p>At the start of your turn, you may choose to give yourself advantage on every roll you would make for the rest of your turn. If you do, you are immediately after affected by the spell Confusion for a number of rounds equal to the number of rolls you gained advantage on from this ability. You may use this ability once per short rest.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Divine Strike</h3>
+                    <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Aberrant Mind</h3>
+                    <p>You gain immunity to the charmed and frightened conditions, as well as psychic damage. Any creature that targets you with a divination or enchantment effect or spell must make a Wisdom saving throw with disadvantage or take 10d8 points of psychic damage.</p>
+            <h1 id="order"><em>Order (Verumese)</em></h1>
+            <h3>Deities</h3>
+            <p>Nero, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Command, Heroism</li>
+                <li>3rd - Hold person, Zone of truth</li>
+                <li>5th - Mass healing word, Slow</li>
+                <li>7th - Compulsion, Locate creature</li>
+                <li>9th - Commune, Dominate person</li>
+            </ul>
+            <h2>Bonus Proficiencies</h2>
+            <p>When you choose this domain at 1st level, you gain proficiency with persuasion, intimidation and insight.</p>
+            <h2>Burden and Oath</h2>
+            <p>Also starting at 1st level, as a bonus action, choose an ally within 20ft, that ally has advantage on the next d20 roll for an action of your choice. (Such as attack, skill check, cast a spell, so on) Once you use this ability you cannot use the same action for 2 rounds. (Including this one.) You may use this a number of times equal to your Wisdom modifier. Once expended, you must long rest to recover them.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Divine Consistency</h3>
+                    <p>Starting at 2nd level, as an action, you present your holy symbol and until the beginning of your next turn, all d20 rolls made in 30ft of you, have their die roll set to 11.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Embodiment of the Law</h3>
+                    <p>At 6th level, you become remarkably adept at channeling magical energy to compel others.</p>
+                    <p>If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.</p>
+                    <p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Divine Strike</h3>
+                    <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Order’s Wrath</h3>
+                    <p>At 17th level as an action, you can cause a nova of stability and order emanate outward from you. All allies are healed and all enemies, in a 60ft radius, are dealt damage equal to 15d6. The damage is Psychic. This ability can only be used again whenever you long rest. Chaotic creatures cannot be healed by this ability and lawful creatures cannot be damaged by it.</p>
+            <h1 id="rage"><em>Rage</em></h1>
+            <p><em>Whoever appeals to mercy against his fellow man is either a fool or a coward. Whoever cannot take care of themselves without mercy is both. For the wounded shall say to their enemy, “If I live, I will kill you. If I die, you are forgiven.” What was left broken, and unspoken, will be mended by violence, and the flames of anger endlessly kindled.</em></p>
+            <h3>Deities</h3>
+            <p>Lorita, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Searing Smite, Hellish Rebuke</li>
+                <li>3rd - Flame Blade, Shatter</li>
+                <li>5th - Enemies Abound, Bestow Curse</li>
+                <li>7th - Freedom of Movement, Shadow of Moil</li>
+                <li>9th - Flame Strike, Immolation</li>
+            </ul>
+            <h2>Sibling of Wrath</h2>
+            <p>Choose one cantrip from among Fire Bolt, Green-Flame Blade, and Primal Savagery, and you can cast it as a cleric cantrip. You also gain proficiency in the Martial skill.</p>
+            <h2>Restless Fury</h2>
+            <p>From 1st level, you can cast a spell or cantrip that requires you to make a spell or melee weapon attack as a bonus action instead of its normal casting time. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once), and regain these uses when you finish a long rest.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Dire Aura</h3>
+                    <p>Starting at 2nd level, you can use your Channel Divinity as an action to create an aura 30 feet around you for 1 minute. All creatures within this aura can score critical hits on a roll of 19 or 20. All creatures that start their turn inside the aura gain a 10 foot bonus to their movement speeds as long as they move in a straight line towards a hostile creature.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Insatiable Savagery</h3>
+                    <p>Starting at 6th level, you gain resistance to fire damage.</p>
+                    <p>When you cast a spell that deals physical or fire damage, you can add your Wisdom modifier to one physical or fire damage roll of that spell against one of its targets.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Vengeful Strike</h3>
+                    <p>At 8th level, you gain the ability to strike back against enemies with a vengeance. Once on each round when a hostile creature hits you with an attack, you can use your reaction to make a melee weapon attack back at the creature, dealing an extra 1d10 fire damage to the target. When you reach 14th level, the extra damage increases to 2d10.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Detonate Rage</h3>
+                    <p>Starting at 17th level, you gain immunity to fire.</p>
+                    <p>If a hostile creature is within sight, you can activate this ability as an action, concentrating on it for up to 1 minute. A hostile creature must stay within sight for you to maintain concentration. When you lose concentration, or after 1 minute, the energy explodes, dealing 1d10 fire damage for each round you concentrated on the ability to all creatures and unattended objects within 40 feet.</p>
+            <h1 id="redemption"><em>Redemption</em></h1>
+            <p><em>To err is mortal, to redeem is divine. These words hold sway over the world. You may have committed a great crime or seek to show others another way. In whichever case, you summon up this power to control your own fate and the power of amends is potent.</em></p>
+            <h3>Deities</h3>
+            <p>Vavren, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Healing Word, Heroism</li>
+                <li>3rd - Enhance Ability, Lesser Restoration</li>
+                <li>5th - Revivify, Elemental Weapon</li>
+                <li>7th - Banishment, Charm Monster</li>
+                <li>9th - Wall of Light, Commune</li>
+            </ul>
+            <h2>Well of Giving</h2>
+            <p>You have +1 hit points per cleric level.</p>
+            <h2>Martyr</h2>
+            <p>Whenever you would heal another ally with a spell, you may choose to take damage equal to the spell's level, if you do so you may heal the ally an additional amount of hit points equal to three times the damage taken.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Suffer for all</h3>
+                    <p>At 2nd level, as an action you can use your Channel Divinity to endure the pain others feel. Until the start of your next turn, all allies within 30ft are resistant to all damage, but you are vulnerable to all damage.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Selfless Gift</h3>
+                    <p>Whenever you suffer damage from your Martyr ability, you may grant all other allies within 20ft a number of temporary Hit Points equal to your Wisdom modifier. These temporary Hit Points do not stack with themselves and expire after one minute. Using this ability costs no action.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Potent Spellcasting</h3>
+                    <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+            <h2>Level 17<hr></h2>
+                <h3>The Greater Fool</h3>
+                    <p>Your Martyr ability heals four times the damage taken. In addition to the normal effects of Martyr, all enemies within 30ft take the damage you take.</p>
+            <h1 id="stars"><em>Stars</em></h1>
+            <h3>Deities</h3>
+            <p>Falaael, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Faerie Fire, Bless</li>
+                <li>3rd - Moonbeam, Darkvision</li>
+                <li>5th - Hunger of Hadar, Melf's Minute Meteors</li>
+                <li>7th - Shadow of Moil, Arcane Eye</li>
+                <li>9th - Destructive Wave, Creation</li>
+            </ul>
+            <h2>Bonus Cantrip</h2>
+            <p>When you choose this domain at 1st level, you gain the Dancing lights cantrip if you don’t already know it and can cast it as a bonus action. The Dancing lights look like stars.</p>
+            <h2>Celestial Lights</h2>
+            <p>Whenever you roll radiant damage with a cantrip, you can use Celestial lights to deal maximum damage, instead of rolling. You can do this a number of times equal to your wisdom modifier. You regain all uses of Celestial lights after a long rest.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Starburst</h3>
+                    <p>Starting at 2nd level, you can use your Channel Divinity to harness the power of the stars from within your spells, dealing damage. As an action, while you are concentrating on the spell Arcane Eye, Dancing Lights, Faerie Fire, or Moonbeam, you may present your holy symbol and make your spell burst with starlight. Each hostile creature within 15 ft of the spell's center must make a Constitution save. A creature takes radiant damage equal to 4d6 + your cleric level on a failed saving throw, and half as much damage on a successful one. If there is more than one spell origin, use all of them. Starburst cannot overlap onto its self.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Elemental Stars</h3>
+                    <p>Starting at 6th level, whenever you would do radiant damage, you can deal force, cold, or fire damage instead. You can still use celestial lights on cantrips if their damage was changed by Elemental Stars.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Potent Spellcasting</h3>
+                    <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Gravitational Pull</h3>
+                    <p>Starting at 17th, Whenever you cast a spell or first level or higher, you can pull any creatures within 40ft of the spell's origin 20ft towards the spell's origin. If there are more than one origin, the caster must choose one.</p>
+            <h1 id="strife"><em>Strife</em></h1>
+            <p><em>There are those that rise to the faithful only after a great loss, or during a great struggle. These individuals face their struggles with gritted teeth and an inexhaustible will.</em></p>
+            <h3>Deities</h3>
+            <p>Iass, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Absorb Elements, Protection from Evil and Good</li>
+                <li>3rd - Aid, Lesser Restoration</li>
+                <li>5th - Aura of Vitality, Life Transference</li>
+                <li>7th - Death Ward, Stoneskin</li>
+                <li>9th - Circle of Power, Mass Cure Wounds</li>
+            </ul>
+            <h2>Bonus Proficiency</h2>
+            <p>At 1st level, you gain proficiency with heavy armor.</p>
+            <h2>Withstand</h2>
+            <p>From 1st level, your faith is empowered by a will to resist wounds. Whenever you would take damage, you may choose to heal yourself for 1d10 hit points as a reaction. (This happens simultaneously with the damage.) You may only do this a number of times per day equal to your wisdom modifier (minimum one). You regain the use of this ability whenever you finish long rest.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Preserve Life</h3>
+                    <p>Starting at 2nd level, you can use your Channel Divinity to heal the badly injured.</p>
+                    <p>As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30 feet of you, and divide these hit points among them. This feature can restore a creature to no more than half of its maximum hit points. You cannot use this ability on an undead or a construct.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Quick Recovery</h3>
+                    <p>Whenever you would spend hit dice to heal, you heal an additional 2 hit points per die rolled.</p>
+                    <p>In addition, you increase your hit dice to d12 instead of d8 for the purposes of spending hit dice.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Divine Strike</h3>
+                    <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Resilience</h3>
+                    <p>Choose three damage types, you have resistance to these damage types. In addition, all allies within 10 ft. benefit from these resistances while you are conscious.</p>
+            <h1 id="time"><em>Time</em></h1>
+            <p><em>The riddle of time is one of the oldest mysteries of all creation, all the more tragic since its near destruction. The shattered pieces fade in and out providing power to those that know how to capture it.</em></p>
+            <h3>Deities</h3>
+            <p>Raquel, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Longstrider, Magic Missle</li>
+                <li>3rd - Blur, Hold Person</li>
+                <li>5th - Haste, Slow</li>
+                <li>7th - Freedom of Movement, Death Ward</li>
+                <li>9th - Mislead, Steel Wind Strike</li>
+            </ul>
+            <h2>Blinding Speed</h2>
+            <p>The Cleric gains advantage on initiative checks.</p>
+            <h2>Shattered Time</h2>
+            <p>After a long rest, you can roll a number of d20s equal to your wisdom modifier. You can "store" these d20s to be used to replace a die roll of an attack roll, saving throw or skill check. Replacing these d20s is a reaction. This can affect yourself or an ally within 20 feet. These rolls last until a long rest.</p>
+            <h2>Level 2<hr></h2>
+                <h3>Channel Divinity: Time Splinter</h3>
+                    <p>At 2nd level, you may use your Channel Divinity to vanish within a splinter of time. As a reaction after you suffer damage or are forced to make a saving throw, you can vanish from time, becoming temporarily immune until the start of your next turn. During this time, you cannot be targeted or seen. After which, you return to an unoccupied space of your choice that is within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen freely if more than one space is equally near).</p>
+            <h2>Level 6<hr></h2>
+                <h3>Time Surge</h3>
+                    <p>Once per long rest, you can use one additional bonus action during your turn. Activating this ability costs no action.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Potent Spellcasting</h3>
+                    <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Greater Time Surge</h3>
+                    <p>When this ability is activated, the cleric can use an additional action this turn. This ability can only be used once and is recharged on a long rest. This ability can be used in conjunction with Time Surge and this ability does not replace it.</p>
+            <h1 id="travel"><em>Travel</em></h1>
+            <p><em>The pathways of the world are filled with twists and turns. The road represents life's great journey and within it, enlightenment.</em></p>
+            <h3>Deities</h3>
+            <p>Wondox, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Comprehend Languages, Longstrider</li>
+                <li>3rd - Animal Messanger, Misty Step</li>
+                <li>5th - Create Food and Water, Tongues</li>
+                <li>7th - Dimension Door, Mordenkainen's Private Sanctum</li>
+                <li>9th - Far Step, Teleportation Circle</li>
+            </ul>
+            <h2>Travler's Grace</h2>
+            <p>You gain a +10 to your base movement speed.</p>
+            <h2>Swift Shape</h2>
+            <p>You may dash or disengage as a bonus action a number of times per day equal to your Wisdom modifier. You regain all uses of this ability when you finish a long rest.</p>
+                <h3>Channel Divinity: Twisting Paths</h3>
+                    <p>Starting at 2nd level, you can use your Channel Divinity to rearrange the battlefield.</p>
+                    <p>As an action, you may present your holy symbol and cause yourself and up to two other allies within 60 ft. of you to change places in any order you wish. This is a teleport effect and each of the spaces occupied must be able to be occupied by the creature place there.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Enduring Stride</h3>
+                    <p>At 6th level, you have advantage on saving throws to avoid exhaustion from travel. Additionally, once per long rest when you would gain a point of exhaustion, you may choose to negate it.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Divine Strike</h3>
+                    <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Astral Steps</h3>
+                    <p>All movement you use is in the form of teleportation. In addition, your movement speed from traveler's Grace increases to 60 ft. This effect is limited to only modes of movement you possess.</p>
+            <h1 id="tyranny"><em>Tyranny</em></h1>
+            <p><em>Domination arises in every form imaginable, not just in hearts full of destruction and chaos. These are the masters who arrange things to ensure that whatever happens, they always win. Know that there is no cost too great for glory.</em></p>
+            <h3>Deities</h3>
+            <p>Astaroth, Babylon, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Command, Bane</li>
+                <li>3rd - Enthrall, Ray of Enfeeblement</li>
+                <li>5th - Hunger of Hadar, Conjure Barrage</li>
+                <li>7th - Blight, Shadow of Moil</li>
+                <li>9th - Dance Macabre, Dominate Person</li>
+            </ul>
+            <h2>With An Iron Fist</h2>
+            <p>You gain proficiency with heavy armor and deal an extra +1 point of damage with unarmed strikes while wearing heavy armor.</p>
+            <h2>Taskmaster</h2>
+            <p>At 1st level, as an action you can coerce allies to comply with your orders, and for enemies to think twice about attacking you. Choose a number of enemies up to half your proficiency bonus within 60 ft. that you can see. Your allies have advantage on attack rolls against the chosen enemies, but disadvantage on attack rolls against all other creatures until the end of their next turn. The chosen enemies have disadvantage on attack rolls against you until the end of their next turn. Constructs and undead are immune to this effect. You may use this ability a number of times equal to your Wisdom modifier, and regain these uses after a long rest.</p>
+                <h3>Channel Divinity: Demand Tribute</h3>
+                    <p>tarting at 2nd level, you can use your Channel Divinity to rightfully take what is yours from the unworthy.</p>
+                    <p>As an action, you present your holy symbol, affecting all other creatures within 30 ft. of you with this ability. For the rest of the encounter, you can potentially take benefits from the affected creatures in one of three ways:</p>
+                    <ul>
+                        <li>The next time an affected creature would gain advantage on an attack roll, saving throw, or ability check, they lose that advantage, and you gain advantage of the same type the next time you would roll it (if a creature loses advantage on an attack roll, you gain advantage on the next attack roll you make)</li>
+                        <li>The next time an affected creature would receive healing, they instead only receive half of it, and you heal for the same amount that they lost</li>
+                        <li>The next time an affected creature would cast a spell targeting only you, you regain a spell slot of the same level as the spell cast on you</li>
+                    </ul>
+                    <p>You can receive a benefit from Demand Tribute in this way only once. At 6th level, you can receive two benefits, and three at 18th level.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Oppression</h3>
+                    <p>Starting at 6th level, you have advantage on Charisma (Intimidation) checks. Furthermore, creatures affected by Taskmaster have disadvantage on their saves against your spells and other domain abilities.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Dominating Strike</h3>
+                    <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Kneel To Your God</h3>
+                    <p>Once per turn, you may cast the spell Hold Monster as a bonus action on any creature affected by Taskmaster. A creature that fails its save against this effect of Hold Monster is also forced to kneel to you – it is rendered prone.</p>
+            <h1 id="undead"><em>Undead</em></h1>
+            <p><em>The cycle of life and death is not something that should be kept sacred, but experimented with. You have learned to disrupt this cycle, conjuring spirits and animating corpses to fulfill your will.</em></p>
+            <h3>Deities</h3>
+            <p>Crowley, The Seven</p>
+            <h3>Domain Spells</h3>
+            <p>At each indicated cleric level, you add the listed spells to your spells prepared.</p>
+            <ul>
+                <li>1st - Inflict Wounds, Ray of Sickness</li>
+                <li>3rd - Darkness, Misty Step</li>
+                <li>5th - Animate Dead, Vampiric Touch</li>
+                <li>7th - Blight, Phantasmal Killer</li>
+                <li>9th - Danse Macabre, Negative Energy Flood</li>
+            </ul>
+            <h2>Bonus Cantrip</h2>
+            <p>At 1st level, you learn one necromancy cantrip from any spell list. For you, this counts a Cleric cantrip.</p>
+            <h2>Spectral Smite</h2>
+            <p>At 1st level, you can conjure vile spirits from the Ethereal plane to lash out at your foes. When you use your action to cast a spell of 1st level or higher, you may use your bonus action make a melee or ranged spell attack versus one creature you can see within 30 feet. If it hits, that creature suffers necrotic damage equal to 1d6 + your Wisdom Modifier.</p>
+            <p>You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest. </p>
+                <h3>Channel Divinity: Conjure Undead</h3>
+                    <p>Starting at 2nd level, you can use your Channel Divinity to summon a horde of skeletons.</p>
+                    <p>As an action, you create three horrid skeletons that last 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The skeletons appear in three adjacent unoccupied spaces that you can see within 30 feet of you. Each skeleton has AC equal to 10 + your Wisdom modifier, Hit Points equal to 3 x your cleric level, and uses your saving throws. If a skeleton is dropped to 0 hit points, it crumbles to dust.</p>
+                    <p>When you use this ability, you can make a melee spell attack for each skeleton against a creature within 5 feet of each of them. On a hit, the targets take magical slashing damage equal to 1d8 + Wisdom modifier.</p>
+                    <p>As an action on each of your turns, you can move each of the skeletons up to 30 feet to a space you can see, but it must remain within 120 feet of you. You may then repeat the attack against a creature within 5 feet of each of the skeletons. The skeletons may move away from one another, can attack separate targets, and take up medium spaces as normal. These skeletons cannot take their own reactions, but you may spend a reaction to grant one of them an opportunity attack if one such attack is provoked.</p>
+            <h2>Level 6<hr></h2>
+                <h3>Corpse Companion</h3>
+                    <p>At 6th level, you learn to raise a permanent undead minion to do your bidding.</p>
+                    <p>With an 8 hour ritual and the expenditure of 50 gp worth of rare herbs, you raise a single medium humanoid corpse to serve as your companion. Select your companion from one of the two following creatures: Skeleton or Zombie. At the end of the 8 hours, your corpse companion is raised. You can have only one corpse companion at a time.</p>
+                    <p>If your corpse companion is ever slain, you may reactivate the vile magics within it to reanimate it. With an 8 hours ritual and the expenditure of 25 gp worth of rare herbs, you call forth your companion and reanimate its lifeless corpse. You must possess the companion’s body in order to reanimate it in this way.</p>
+                    <p>Your corpse companion gains the following bonuses while it is controlled by you:</p>
+                    <ul>
+                        <li>The companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions. If you are incapacitated or absent, your companion does not act on its own.</li>
+                        <li>Your companion has base hit points equal to 5 times your cleric level. If it is reduced to 0 hit points, it makes death saving throws as normal. It has proficiency with simple weapons and light armor, but has no attunement slots. Your companion uses your proficiency bonus rather than its own. In addition to the areas where it normally uses its proficiency bonus, a corpse companion also adds its proficiency bonus to its AC and to its damage rolls and gains proficiency with all saving throws. Finally, you may increase one of its ability scores by 2, or increase two ability scores 1.</li>
+                        <li>Your corpse companion cannot spend hit dice or be healed by any effect that does not heal undead. It returns to full hit points on a long rest as normal. Whenever you cast Inflict Wounds on your corpse companion, it heals a number of hit points equal to the damage that would have been dealt rather than taking damage.</li>
+                    </ul>
+                    <p>For each cleric level you gain after 6th, your corpse companion gains an additional hit die and increases its hit points by 5 + its Constitution Modifier.</p>
+                    <p>Whenever you gain the Ability Score Improvement class feature, your companion's abilities also improve. Your companion can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can't increase an ability score above 20 using this feature unless its description specifies otherwise.</p>
+            <h2>Level 8<hr></h2>
+                <h3>Potent Spellcasting</h3>
+                    <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+            <h2>Level 17<hr></h2>
+                <h3>Undead Lord</h3>
+                    <p>At 17th level, any undead creatures you animate or summon with a necromancy spell add your proficiency bonus to their saving throws, attack rolls, damage rolls, and AC. This does not apply to your Corpse Companion.</p>
+                    <p>As an action, you may destroy your Corpse Companion, rendering it to dust. When you do so, you regain a number of Hit Points equal to the number of Hit Points it had remaining. Any equipment your companion had falls to its space unharmed. This ability can be used at any range, but you and your corpse companion must be on the same plane.</p>
+        </div>
+    </div>
+    <div id="backtotop"><a href="#top">&#65087;</a></div> <!--Back to top anchor-->
+</main>
+<footer>
+    <h1>All creative rights of Verum belong to <a href="https://twitter.com/GloriousArcadum" target="_blank">Arcadum</a> &#169;</h1>
+    <p>All art is created by the community - Links to artists are provided below each picture
+    This site was designed and created by Jordan Kottmyer for their Spring 2021 CIS 119 final project</p>
+</footer>
+</body>
+</html>
