@@ -1,0 +1,10 @@
+Bot online at 08/06/2021, 15:01:33 EST
+jkott#5348: tEST @ 08/06/2021, 15:01:38 EST
+jkott#5348: Hello @ 08/06/2021, 15:01:41 EST
+jkott#5348: !Test @ 08/06/2021, 15:01:42 EST
+JkottTestAppBot#1715: This is a test to make sure @everyone is working. @ 08/06/2021, 15:01:42 EST
+jkott#5348: !print This will repeat this message @ 08/06/2021, 15:01:51 EST
+JkottTestAppBot#1715: This will repeat this message @ 08/06/2021, 15:01:51 EST
+jkott#5348: !logs general @ 08/06/2021, 15:02:06 EST
+jkott#5348: !roll 10 20 @ 08/06/2021, 15:02:56 EST
+JkottTestAppBot#1715: [11, 7, 10, 4, 20, 1, 2, 7, 16, 6] @ 08/06/2021, 15:02:56 EST
