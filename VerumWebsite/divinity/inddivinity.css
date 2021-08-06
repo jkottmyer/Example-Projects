@@ -1,0 +1,327 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    background-color: #0c0916; 
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex: 3 3 auto;
+}
+
+#icon {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: center;
+    color: white;
+}
+
+/*Nav*/
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 75%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 10%; /* width of items - use whatever measurement works, but remember % and em are more responsive than px */
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: left; /* center could also work, or even right, depending on your design */
+    padding: 1em 0 1em .5em; /* again, adjust for your design */
+    text-decoration: none;
+    color: white; /* change these colors to match your color scheme */
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#nav_menu ul ul {
+    width:100%;
+    display: none; /* sets it to be non-visible and to take no space */
+    position: absolute; /* takes it out of flow and positions it in relation to what?? */
+    top: 100%;
+    z-index: 1;
+}
+#nav_menu ul ul li {
+	float: none; /* undoes the float from above */
+}
+#nav_menu ul li:hover > ul,#nav_menu ul li:focus > ul {
+	display: block;
+}
+#nav_menu > ul::after { /* makes sure that the next block element will clear after the list and not overlap */
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#nav_menu a:hover, #nav_menu a:focus { /* gives visual feedback when focused or hovered; adjust colors as needed */
+    background-color: lightgray;
+    color: #1d1635;
+}
+
+#menu li ul li a{
+    font-size: .75em;
+    background-color: #1d1635;
+}
+
+/*SlickNav*/
+.slicknav_menu{
+    display: none;
+}
+
+#mobile_menu{
+    display: none;
+}
+
+/*Nav End*/
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: 15%;
+    padding-top: 40px;
+}
+
+/*Everything above is heading*/
+
+body{
+    margin: 0 auto;
+    height: 100vh;
+    overflow-x: hidden;
+    background: 
+    linear-gradient(
+      to bottom,
+      #1d1635,
+      #0c0916
+    );
+}
+/*Every page*/
+
+main{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    margin: 0 10% 0 10%;
+}
+
+.goddescription{
+    color: black;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.goddescription h1 {
+    margin: 0 0 10px 0;
+    padding: 0 5px 0 5px;
+    text-decoration: underline; 
+    font-size: 2.5em;
+}
+
+.goddescription h2 {
+    margin: 10px 0 0 0;
+    padding: 0 5px 0 5px;
+}
+
+.goddescription h3 {
+    margin: 5px 0 0 0;
+    padding: 0 5px 0 5px;
+}
+
+.goddescription p {
+    font-size: .9em;
+    padding: 5px 5px 0 5px;
+    margin: 0;
+}
+
+.goddescription li {
+    font-size: .9em;
+    padding: 0 5px 0 5px;
+    margin: 0;
+}
+
+.godportrait{
+    float:right;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.symbols{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+}
+
+.image{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.caption{
+    display: block;
+}
+
+/*Back to top*/
+a[href="#top"] {
+    display: inline;
+    color: black;
+    background-color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 2.5em;
+    padding: 0 8px 8px 8px;
+    border-radius: 30px;
+}
+
+a[href="#top"]:hover, a[href="#top"]:focus {
+    display: inline;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    font-size: 2.5em;
+    padding: 0 8px 8px 8px;
+    border-radius: 30px;
+}
+
+#backtotop {
+    display: inline-block;
+    position: fixed;
+    right:1%;
+    bottom: 10%;
+    height: 2em;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding-top: 50px;
+}
+
+footer p, footer h1{
+    font-size: .75em;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+footer a:link, footer a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+/*Mediaqueries*/
+
+/* Small screens 1024*/
+@media only screen and (max-width: 1024px) {
+    #nav_menu ul li {
+        width:12%;
+    }
+    #nav_menu ul li a {
+        font-size: 1em;
+    }
+    #menu li ul li a{
+        font-size: .5em;
+    }
+    #links{
+        flex-basis: 20%;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 960px) {
+    #nav_menu ul li {
+        width:12%;
+    }
+    #nav_menu ul li a {
+        font-size: 1em;
+    }
+    #menu li ul li a{
+        font-size: .5em;
+    }
+    #links{
+        flex-basis: 20%;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    p{
+        font-size: 1.25em;
+    }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 768px){
+    #nav_menu {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+        position: relative;
+        width: 100vw;
+        z-index: 1;
+    }
+    #mobile_menu{
+        display: none;
+    }
+    #links{
+        flex-basis: 70%;
+    }
+
+    #icon{
+        flex-basis: 30%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .godportrait{
+        height:406px;
+        width:350px;
+        float: none;
+        margin:0 auto;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .godportrait{
+        height: 336px;
+        width: 280px;
+    }
+}
