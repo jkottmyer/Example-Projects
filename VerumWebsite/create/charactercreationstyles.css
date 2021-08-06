@@ -1,0 +1,314 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    background-color: #0c0916; 
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex: 3 3 auto;
+}
+
+#icon {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: center;
+    color: white;
+}
+
+/*Nav*/
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 75%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 10%; /* width of items - use whatever measurement works, but remember % and em are more responsive than px */
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: left; /* center could also work, or even right, depending on your design */
+    padding: 1em 0 1em .5em; /* again, adjust for your design */
+    text-decoration: none;
+    color: white; /* change these colors to match your color scheme */
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#nav_menu ul ul {
+    width:100%;
+    display: none; /* sets it to be non-visible and to take no space */
+    position: absolute; /* takes it out of flow and positions it in relation to what?? */
+    top: 100%;
+    z-index: 1;
+}
+#nav_menu ul ul li {
+	float: none; /* undoes the float from above */
+}
+#nav_menu ul li:hover > ul,#nav_menu ul li:focus > ul {
+	display: block;
+}
+#nav_menu > ul::after { /* makes sure that the next block element will clear after the list and not overlap */
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#nav_menu a:hover, #nav_menu a:focus { /* gives visual feedback when focused or hovered; adjust colors as needed */
+    background-color: lightgray;
+    color: #1d1635;
+}
+
+#menu li ul li a{
+    font-size: .75em;
+    background-color: #1d1635;
+}
+
+/*SlickNav*/
+.slicknav_menu{
+    display: none;
+}
+
+#mobile_menu{
+    display: none;
+}
+
+/*Nav End*/
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: 15%;
+    padding-top: 40px;
+}
+
+/*Everything above is heading*/
+
+body{
+    flex-direction: column;
+    flex: 1 1 auto;
+    width: 100vw;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background: 
+    linear-gradient(
+      to bottom,
+      #1d1635,
+      #0c0916
+    );
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/*For every page*/
+
+
+#content {
+    margin: 0 10%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 2 2 auto;
+    color: black;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+#charactercreation {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#content > h1 {
+    display: inline-flex;
+    margin: 0 auto;
+    font-size: 3em;
+    text-align: center;
+}
+
+button[type="submit"] {
+    padding: 0px 5px 0px 5px;
+    font-size: 1.5em;
+}
+
+button[type="submit"]:hover, button[type="submit"]:focus{
+    cursor: pointer;
+}
+
+div > label {
+    font-size: 1.5em;
+}
+
+label[for="name"], label[for="class"], label[for="race"], label[for="origin"], label[for="divinity"]{
+    padding: 2px;
+}
+
+.informationrows {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+#informationcolumn {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 5%;
+    height: 325px;
+    width: 325px;
+}
+
+.info:nth-child(odd){
+    margin-right:10px;
+}
+
+.info:nth-child(even){
+    margin-left:10px;
+}
+
+.info > h1 {
+    text-align: center;
+    margin: 0;
+    padding: 2px 0;
+}
+
+.infopar {
+    text-align: left;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.infopar  a:link, .infopar  a:visited {
+    text-decoration: underline;
+}
+
+.infopar a:hover, .infopar a:focus {
+    font-weight: bold;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding-top: 50px;
+}
+
+footer p, footer h1{
+    font-size: .75em;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+footer a:link, footer a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+/*Mediaqueries*/
+
+/* Small screens 1024*/
+@media only screen and (max-width: 1024px) {
+    #nav_menu ul li {
+        width:12%;
+    }
+    #nav_menu ul li a {
+        font-size: 1em;
+    }
+    #menu li ul li a{
+        font-size: .5em;
+    }
+    #links{
+        flex-basis: 20%;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 960px) {
+    #nav_menu ul li {
+        width:12%;
+    }
+    #nav_menu ul li a {
+        font-size: 1em;
+    }
+    #menu li ul li a{
+        font-size: .5em;
+    }
+    #links{
+        flex-basis: 20%;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 768px){
+    #nav_menu {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+        position: relative;
+        width: 100vw;
+        z-index: 1;
+    }
+    #mobile_menu{
+        display: none;
+    }
+    #links{
+        flex-basis: 70%;
+    }
+    #icon{
+        flex-basis: 30%;
+    }
+    #charactercreation{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .informationrows{
+        flex-direction: column;
+    }
+    .info:nth-child(even){
+        margin:10px auto;
+    }
+    .info:nth-child(odd){
+        margin:10px auto;
+    }
+}
+}
