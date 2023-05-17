@@ -30,19 +30,19 @@ def get_status(speaker):
     return state_status
 
 def send_email(response):
-    sender='sonos@efmpc.com'
-    receivers=['efmsupport@efmpc.com']
+    sender='sonos@domain.com'
+    receivers=['efmsupport@domain.com']
     now=datetime.now()
     dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
     response = dt_string + ': ' + response
-    message="""From: Sonos <sonos@efmpc.com>
-To: EFM Support <efmsupport@efmpc.com>
+    message="""From: Sonos <sonos@domain.com>
+To: Email <email@domain.com>
 Subject: Sonos Event
 
 
 {}
 """.format(response)
-    smtpObj = smtplib.SMTP(host='mail.efmpc.com', port='25')
+    smtpObj = smtplib.SMTP(host='mail.domain.com', port='25')
     smtpObj.sendmail(sender, receivers, message)
     log_resonses(response)
     time.sleep(300)
@@ -58,7 +58,7 @@ def discover_speakers():
         send_email(discover_status)
     
 def wifi_connect():
-    os.system(f'''cmd /c "netsh wlan connect name=EFMSecure"''')
+    os.system(f'''cmd /c "netsh wlan connect name=WifiNetwork"''')
     time.sleep(10)
     wifi_connected()
 
@@ -66,7 +66,7 @@ def wifi_connect():
 def wifi_connected():
     wifiConnections = subprocess.check_output(['netsh', 'WLAN', 'show', 'interfaces'])
     data = wifiConnections.decode('utf-8')
-    if not "EFMSecure" in data:
+    if not "WifiNetwork" in data:
         wifi_connect()
 
 def main():
@@ -85,3 +85,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    #Edited out sensitive information
